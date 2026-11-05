@@ -153,8 +153,7 @@ class BlogApiControllerTest {
                 .build());
         final String newTitle = "new title";
         final String newContent = "new content";
-        UpdateArticleRequest request = new UpdateArticleRequest(newTitle,
-                newContent);
+        UpdateArticleRequest request = new UpdateArticleRequest(newTitle, newContent);
 
         // when
         ResultActions result = mockMvc.perform(put(url, savedArticle.getId())
